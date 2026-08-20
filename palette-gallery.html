@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#14182b">
+  <title>n1.care — Main version and colour finalists</title>
+  <meta name="description" content="The main Crimson n1.care website and five selected colour directions.">
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #101217;
+      color: #f4f4f1;
+    }
+    * { box-sizing: border-box; }
+    body { min-height: 100svh; margin: 0; background: radial-gradient(circle at 50% -20%, #303542 0, #171a21 36%, #101217 72%); }
+    main { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: clamp(64px, 9vw, 112px) 0 96px; }
+    header { display: grid; grid-template-columns: 1fr minmax(260px, .62fr); gap: 48px; align-items: end; margin-bottom: 54px; }
+    .eyebrow { margin: 0 0 18px; color: #a7aebc; font-size: 11px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    h1 { max-width: 720px; margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(45px, 7vw, 82px); font-weight: 400; line-height: .96; letter-spacing: -.045em; }
+    .intro { max-width: 500px; margin: 0 0 4px; color: #bcc1cb; font-size: 16px; line-height: 1.65; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .card { position: relative; min-height: 280px; display: flex; flex-direction: column; padding: 28px; overflow: hidden; border: 1px solid rgba(255,255,255,.12); border-radius: 20px; color: var(--card-ink); background: var(--card-paper); text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+    .card:first-child { grid-column: 1 / -1; min-height: 330px; }
+    .card:hover { transform: translateY(-4px); border-color: rgba(255,255,255,.28); box-shadow: 0 24px 64px rgba(0,0,0,.28); }
+    .card:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+    .number { color: var(--card-primary); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+    .swatches { display: flex; gap: 7px; margin: 30px 0 auto; }
+    .swatches span { width: clamp(34px, 6vw, 72px); height: 54px; border: 1px solid rgba(0,0,0,.1); border-radius: 999px; background: var(--swatch); }
+    h2 { max-width: 600px; margin: 28px 0 8px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(30px, 4vw, 48px); font-weight: 400; line-height: 1; letter-spacing: -.03em; }
+    .card p { margin: 0; color: var(--card-muted); font-size: 14px; line-height: 1.55; }
+    .open { position: absolute; top: 24px; right: 24px; width: 40px; height: 40px; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--card-primary), transparent 65%); border-radius: 50%; color: var(--card-primary); font-size: 18px; }
+    footer { display: flex; justify-content: space-between; gap: 24px; margin-top: 42px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.12); color: #8f96a4; font-size: 12px; }
+    @media (max-width: 760px) {
+      main { width: min(calc(100% - 28px), 560px); padding-top: 54px; }
+      header { grid-template-columns: 1fr; gap: 24px; }
+      .grid { grid-template-columns: 1fr; }
+      .card:first-child { grid-column: auto; min-height: 280px; }
+      footer { flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">n1.care · Colour review</p>
+        <h1>One main version.<br>Five alternatives.</h1>
+      </div>
+      <p class="intro">The original Crimson production base alongside five selected colour studies for quick visual comparison.</p>
+    </header>
+
+    <div class="grid" aria-label="Colour directions">
+      <a class="card" href="index.html" style="--card-primary:#852f46;--card-paper:#faf4ea;--card-ink:#24151c;--card-muted:#685b61">
+        <span class="number">Main version · Crimson production base</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#852f46"></span><span style="--swatch:#ef9b77"></span><span style="--swatch:#f4eddf"></span><span style="--swatch:#24212a"></span></div>
+        <h2>Crimson Video Header</h2><p>The original working website with the full video-led homepage and Crimson brand system.</p>
+      </a>
+      <a class="card" href="index-19-smoked-birch-copper-patina.html" style="--card-primary:#2a2b2a;--card-paper:#fbf9f5;--card-ink:#171817;--card-muted:#6a6864">
+        <span class="number">Alternative 01 · Direction 19</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#2a2b2a"></span><span style="--swatch:#376361"></span><span style="--swatch:#48a9a6"></span><span style="--swatch:#f3ede2"></span></div>
+        <h2>Smoked Birch &amp; Copper Oxide</h2><p>Sanctuary Longevity · the most balanced blend of clinical trust, warmth, and premium restraint.</p>
+      </a>
+      <a class="card" href="index-16-coral-reef-marine-zinc.html" style="--card-primary:#162e3b;--card-paper:#f8fafb;--card-ink:#0d1c24;--card-muted:#626d73">
+        <span class="number">Alternative 02 · Direction 16</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#162e3b"></span><span style="--swatch:#7e4b48"></span><span style="--swatch:#ff6f59"></span><span style="--swatch:#edf3f5"></span></div>
+        <h2>Coral Reef &amp; Marine Zinc</h2><p>Cellular Vitality · the strongest warm option, balancing human energy with a disciplined marine base.</p>
+      </a>
+      <a class="card" href="index-09-midnight-bronze.html" style="--card-primary:#252e3e;--card-paper:#f8f8f9;--card-ink:#131922;--card-muted:#656971">
+        <span class="number">Alternative 03 · Direction 09</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#252e3e"></span><span style="--swatch:#6e6252"></span><span style="--swatch:#c8a36c"></span><span style="--swatch:#edeef2"></span></div>
+        <h2>Midnight &amp; Bronze</h2><p>Executive Diagnostics · understated and authoritative, suited to clinician and executive audiences.</p>
+      </a>
+      <a class="card" href="index-10-terracotta-sienna.html" style="--card-primary:#7d3826;--card-paper:#faf5f2;--card-ink:#291712;--card-muted:#766761">
+        <span class="number">Alternative 04 · Direction 10</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#7d3826"></span><span style="--swatch:#ac5e49"></span><span style="--swatch:#e78d75"></span><span style="--swatch:#f4eae4"></span></div>
+        <h2>Terracotta &amp; Sienna</h2><p>Holistic Earth · warm, grounded, and human without losing the seriousness needed for healthcare.</p>
+      </a>
+      <a class="card" href="index-18-juniper-glacial-mint.html" style="--card-primary:#1e2342;--card-paper:#f4f8fa;--card-ink:#0f1325;--card-muted:#606673">
+        <span class="number">Alternative 05 · Direction 18</span><span class="open" aria-hidden="true">↗</span>
+        <div class="swatches" aria-hidden="true"><span style="--swatch:#1e2342"></span><span style="--swatch:#427b76"></span><span style="--swatch:#6ee7b7"></span><span style="--swatch:#e6f0f4"></span></div>
+        <h2>Juniper &amp; Glacial Mint</h2><p>Alpine Longevity · fresh and clinical, with enough depth to avoid generic health-tech blue.</p>
+      </a>
+    </div>
+
+    <footer><span>Original production base plus five selected studies.</span><span>Preview gallery · August 2026</span></footer>
+  </main>
+</body>
+</html>
